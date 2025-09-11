@@ -1,0 +1,20 @@
+########################################
+# Shared for .gitignore & .dockerignore
+########################################
+
+# Python
+__pycache__/
+.venv/
+*.egg-info/
+
+# DB
+/db/.pgdata/
+
+# Internal documents
+/docs/internal/
+
+########################################
+# Only in .dockerignore
+########################################
+
+.git
