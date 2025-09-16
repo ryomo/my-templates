@@ -3,5 +3,20 @@
     {
       "text": "Use concise conventional commit messages with a type prefix (e.g. fix:, feat:, docs:, chore:, refactor:, or test:)."
     }
-  ]
+  ],
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
 }
