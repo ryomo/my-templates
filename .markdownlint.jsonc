@@ -1,14 +1,14 @@
+// https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.jsonc
 {
   // MD013: Line length
   "MD013": false,
 
-  // MD024: Multiple headings with the same content
-  // https://github.com/DavidAnson/markdownlint/blob/main/doc/md024.md
+  // MD024: Multiple headers with the same content
   "MD024": {
     "siblings_only": true
   },
 
-  // MD036: Emphasis used instead of a heading
+  // MD036: Emphasis used instead of a header
   "MD036": false,
 
   // MD040: Fenced code blocks should have a language specified
