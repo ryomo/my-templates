@@ -2,8 +2,11 @@
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
       "text": "Use concise conventional commit messages with a type prefix (e.g. fix:, feat:, docs:, chore:, refactor:, or test:)."
+      // "text": "コミットメッセージは、先頭にプレフィックスを付けて（例: fix:, feat:, docs:, chore:, refactor:, test:）。メッセージは日本語で、丁寧語は使わず、簡潔に記載して。",
     }
   ],
+  // Python files
+  // NOTE: Ruff extension required
   "[python]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -12,11 +15,34 @@
       "source.organizeImports": "explicit"
     }
   },
+  // Jupyter Notebooks
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  // JavaScript, Vue, HTML, CSS
+  // NOTE: Prettier and ESLint extensions required
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     }
-  }
+  },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
 }
